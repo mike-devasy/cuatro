@@ -311,11 +311,8 @@ body {
   .page__hero {
     padding-bottom: 2.5rem;
   }
-  .hero__titles {
-    padding-top: 2.5rem;
-  }
-  .hero__titles {
-    padding-bottom: 2.5rem;
+  .hero__container {
+    margin-bottom: 1.875rem;
   }
   .hero__label {
     font-size: 2.25rem;
@@ -364,11 +361,8 @@ body {
   .page__hero {
     padding-bottom: clamp( 2.5rem , 1.6836734693875rem  +  4.0816326531vw , 5rem );
   }
-  .hero__titles {
-    padding-top: clamp( 2.5rem , 1.27551020408125rem  +  6.1224489796vw , 6.25rem );
-  }
-  .hero__titles {
-    padding-bottom: clamp( 2.5rem , 1.27551020408125rem  +  6.1224489796vw , 6.25rem );
+  .hero__container {
+    margin-bottom: clamp( 1.875rem , 0.8545918367375rem  +  5.1020408163vw , 5rem );
   }
   .hero__label {
     font-size: clamp( 2.25rem , 1.51530612245rem  +  3.6734693878vw , 4.5rem );
@@ -417,11 +411,8 @@ body {
   .page__hero {
     padding-bottom: 5rem;
   }
-  .hero__titles {
-    padding-top: 6.25rem;
-  }
-  .hero__titles {
-    padding-bottom: 6.25rem;
+  .hero__container {
+    margin-bottom: 5rem;
   }
   .hero__label {
     font-size: 4.5rem;
