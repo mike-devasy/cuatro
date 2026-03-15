@@ -264,6 +264,9 @@ body {
   }
 }
 @media (max-width: 47.99875em){
+  .hero__container {
+    min-height: 50svh;
+  }
   .banner {
     background: var(--bannerColor);
     clip-path: polygon(48% 0, 78% 15%, 100% 0, 100% 100%, 79% 86%, 50% 100%, 21% 87%, 0 100%, 0 0, 20% 12%);
@@ -315,13 +318,13 @@ body {
     padding-bottom: 2.5rem;
   }
   .hero__container {
-    margin-bottom: 1.875rem;
+    margin-bottom: 6.25e-8rem;
   }
   .hero__label {
     font-size: 2.25rem;
   }
   .banner {
-    padding-top: 2.5rem;
+    padding-top: 6.25e-8rem;
   }
   .banner {
     padding-bottom: 2.5rem;
@@ -365,13 +368,13 @@ body {
     padding-bottom: clamp( 2.5rem , 1.6836734693875rem  +  4.0816326531vw , 5rem );
   }
   .hero__container {
-    margin-bottom: clamp( 1.875rem , 0.8545918367375rem  +  5.1020408163vw , 5rem );
+    margin-bottom: clamp( 6.25e-8rem , -1.63265297831875rem  +  8.1632652041vw , 5rem );
   }
   .hero__label {
     font-size: clamp( 2.25rem , 1.51530612245rem  +  3.6734693878vw , 4.5rem );
   }
   .banner {
-    padding-top: clamp( 2.5rem , 1.37755102040625rem  +  5.612244898vw , 5.9375rem );
+    padding-top: clamp( 6.25e-8rem , -1.93877542729375rem  +  9.693877449vw , 5.9375rem );
   }
   .banner {
     padding-bottom: clamp( 2.5rem , 1.37755102040625rem  +  5.612244898vw , 5.9375rem );
