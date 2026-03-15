@@ -291,16 +291,16 @@ body {
     padding-bottom: 0.625rem;
   }
   .header__logo-icon {
-    width: 1.25rem;
+    width: 1.6875rem;
   }
   .header__logo-title {
-    width: 6.25rem;
+    width: 8.125rem;
   }
   .button {
-    padding-top: 0.625rem;
+    padding-top: 0.3125rem;
   }
   .button {
-    padding-bottom: 0.625rem;
+    padding-bottom: 0.3125rem;
   }
   .button {
     padding-left: 0.625rem;
@@ -341,16 +341,16 @@ body {
     padding-bottom: clamp( 0.625rem , 0.01275510204375rem  +  3.0612244898vw , 2.5rem );
   }
   .header__logo-icon {
-    width: clamp( 1.25rem , 0.5969387755125rem  +  3.2653061224vw , 3.25rem );
+    width: clamp( 1.6875rem , 1.17729591836875rem  +  2.5510204082vw , 3.25rem );
   }
   .header__logo-title {
-    width: clamp( 6.25rem , 3.8010204081625rem  +  12.2448979592vw , 13.75rem );
+    width: clamp( 8.125rem , 6.288265306125rem  +  9.1836734694vw , 13.75rem );
   }
   .button {
-    padding-top: clamp( 0.625rem , 0.461734693875rem  +  0.8163265306vw , 1.125rem );
+    padding-top: clamp( 0.3125rem , 0.04719387755rem  +  1.3265306122vw , 1.125rem );
   }
   .button {
-    padding-bottom: clamp( 0.625rem , 0.461734693875rem  +  0.8163265306vw , 1.125rem );
+    padding-bottom: clamp( 0.3125rem , 0.04719387755rem  +  1.3265306122vw , 1.125rem );
   }
   .button {
     padding-left: clamp( 0.625rem , 0.0943877551rem  +  2.6530612245vw , 2.25rem );
