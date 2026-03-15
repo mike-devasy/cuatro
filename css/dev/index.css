@@ -383,7 +383,6 @@ textarea.input {
   font-family: var(--primaryFont);
   font-style: normal;
   border-radius: 0.75rem;
-  padding: 1.5rem 10rem;
   font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -425,6 +424,12 @@ textarea.input {
   }
   .form__button {
     padding-right: 6.25rem;
+  }
+  .form__button {
+    padding-top: 0.75rem;
+  }
+  .form__button {
+    padding-bottom: 0.75rem;
   }
 }
 @media (max-width: 29.99875em){
@@ -499,9 +504,6 @@ textarea.input {
   .form__line {
     height: 3.125rem;
   }
-  .form__button {
-    height: 3.125rem;
-  }
 }
 @media (max-width: 31.25em) and (width > 81.25em){
   .form__button {
@@ -509,6 +511,12 @@ textarea.input {
   }
   .form__button {
     padding-right: 10rem;
+  }
+  .form__button {
+    padding-top: 1.5rem;
+  }
+  .form__button {
+    padding-bottom: 1.5rem;
   }
 }
 @media (width > 20em) and (width <= 81.25em){
@@ -572,9 +580,6 @@ textarea.input {
   .form__line {
     height: clamp( 3.125rem , 2.71683673469375rem  +  2.0408163265vw , 4.375rem );
   }
-  .form__button {
-    height: clamp( 3.125rem , 2.6760204081625rem  +  2.2448979592vw , 4.5rem );
-  }
 }
 @media (width > 31.25em){
   .form__button {
@@ -588,6 +593,12 @@ textarea.input {
   }
   .form__button {
     padding-right: clamp( 6.25rem , 5.02551020408125rem  +  6.1224489796vw , 10rem );
+  }
+  .form__button {
+    padding-top: clamp( 0.75rem , 0.50510204081875rem  +  1.2244897959vw , 1.5rem );
+  }
+  .form__button {
+    padding-bottom: clamp( 0.75rem , 0.50510204081875rem  +  1.2244897959vw , 1.5rem );
   }
 }
 @media (width > 81.25em){
@@ -650,9 +661,6 @@ textarea.input {
   }
   .form__line {
     height: 4.375rem;
-  }
-  .form__button {
-    height: 4.5rem;
   }
 }
 @media (any-hover: hover){
