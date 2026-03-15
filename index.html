@@ -5,8 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1773577981894"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1773577981894">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1773614474466"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1773614474466">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1773614474466">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -24,6 +25,7 @@
 				</div>
 			</header>
 			<main class="page">
+				<!-- @format -->
 				<main class="page">
 					<section class="page__hero hero">
 						<div class="hero__container container">
@@ -42,10 +44,41 @@
 							</div>
 						</div>
 					</section>
+					<section class="page__form form">
+						<div class="form__container container">
+							<form data-fls-form="ajax" data-fls-form-popup="popup" method="post" action="#" class="form__body">
+								<div class="form__lines">
+									<div class="form__line">
+										<img class="form__icon" src="./assets/img/svgicons/email.svg" alt="Email icon">
+										<input data-fls-form-errtext="E-mail error" data-fls-input="" required type="email" placeholder="email" name="email" class="form__input">
+									</div>
+									<div class="form__line">
+										<label for="password" class="form__visually-hidden">Password</label>
+										<img class="form__icon" src="./assets/img/svgicons/password.svg" alt="Password icon">
+										<input data-fls-form-errtext="Password required" data-fls-input="" required autocomplete="new-password" type="password" placeholder="Password" name="password" class="form__input">
+										<button type="button" class="form__input-button" aria-label="Show password" data-fls-input-viewpass=""></button>
+									</div>
+									<div class="form__line">
+										<label for="confirm-password" class="form__visually-hidden">Confirm password</label>
+										<img class="form__icon" src="./assets/img/svgicons/password.svg" alt="Password icon">
+										<input data-fls-form-errtext="confirm password required" data-fls-input="" required autocomplete="new-password" type="confirm-password" placeholder="confirm password" name="confirm_password" class="form__input">
+										<button type="button" class="form__input-button" aria-label="Show password" data-fls-input-viewpass=""></button>
+									</div>
+								</div>
+								<button type="submit" class="form__button button button--primary">Sign Up</button>
+								<p class="form__text">
+									Already have an account?
+									<a href="#" class="form__login-link">Log In</a>
+								</p>
+							</form>
+						</div>
+					</section>
 				</main>
 			</main>
 			<footer data-fls-footer="" class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__container">
+					<p class="footer__label">2026</p>
+				</div>
 			</footer>
 		</div>
 	</body>
