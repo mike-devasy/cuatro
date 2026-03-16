@@ -1,0 +1,55 @@
+:root {
+  --font-family-base: "Manrope", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-family-display: "Zalando Sans Expanded", "Manrope", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --color-bg: #0c0c18;
+  --color-surface: #121521;
+  --color-surface-soft: #1a1f31;
+  --color-hero: #070a11;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+  --color-primary: #ef5d00;
+  --color-primary-muted: #d55200;
+  --color-icon: #D8D8D8;
+  --color-border: #B2B2B2;
+  --color-btn-lines: #cb4a00;
+  --color-success: #29c772;
+  --color-danger: #EF4444;
+  --field-background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.14));
+
+  --radius-xxs: 4px;
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  
+
+  --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.35);
+
+  --hero-height-mobile: 420px;
+  --hero-height-tablet: 520px;
+
+  --font-size-xxs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --hero-height-mobile: var(--hero-height-tablet);
+  }
+}
