@@ -122,6 +122,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.625rem;
 }
 .header__logo {
   display: flex;
@@ -411,7 +412,7 @@ textarea.input {
 }
 @media (max-width: 47.99875em){
   .hero__container {
-    min-height: 50svh;
+    min-height: 45svh;
   }
   .banner {
     background: var(--bannerColor);
