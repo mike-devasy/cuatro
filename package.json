@@ -7,9 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build:repo": "npm run build && node ../../template/scripts/build-repo.mjs"
+    "build:repo": "npm run build && node ../../template/scripts/build-repo.mjs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "ship": "git add . && git commit -m \"Quick update\" && git push origin main && npm run deploy"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^7.3.1"
   },
   "dependencies": {

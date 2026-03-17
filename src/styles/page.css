@@ -1,3 +1,5 @@
+/** @format */
+
 .wrapper {
   min-height: 100dvh;
   display: flex;
@@ -127,10 +129,18 @@
   z-index: 1;
   opacity: 0.28;
   mix-blend-mode: screen;
-  background: radial-gradient(50% 50% at 50% 50%, #f8b58b 13%, rgba(248, 181, 139, 0.7) 40%, rgba(248, 181, 139, 0.1) 60%, rgba(248, 181, 139, 0.3) 70%, rgba(239, 93, 0, 0) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #f8b58b 13%,
+    rgba(248, 181, 139, 0.7) 40%,
+    rgba(248, 181, 139, 0.1) 60%,
+    rgba(248, 181, 139, 0.3) 70%,
+    rgba(239, 93, 0, 0) 100%
+  );
 }
 
 .hero__image {
+  max-width: 100%;
   position: relative;
   z-index: 5;
 }
@@ -163,7 +173,18 @@
   padding-top: 0;
   padding-bottom: 0;
   background: var(--color-primary);
-  clip-path: polygon(48% 0, 78% 15%, 100% 0, 100% 100%, 79% 86%, 50% 100%, 21% 87%, 0 100%, 0 0, 20% 12%);
+  clip-path: polygon(
+    48% 0,
+    78% 15%,
+    100% 0,
+    100% 100%,
+    79% 86%,
+    50% 100%,
+    21% 87%,
+    0 100%,
+    0 0,
+    20% 12%
+  );
 }
 
 .banner__title {
@@ -301,12 +322,14 @@
 .field {
   position: relative;
   display: flex;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
   padding: 19px var(--space-md) 15px 44px;
   border: 1px solid transparent;
   border-radius: var(--radius-sm);
   background: var(--field-background);
-  transition: border-color 0.2s ease, margin-bottom 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    margin-bottom 0.2s ease;
 }
 
 .field:hover,
@@ -355,10 +378,14 @@
   pointer-events: none;
   opacity: 0;
   transform: translateY(-50%);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
-.field:not(.field--phone):not(.field--password) input:not(:placeholder-shown) ~ .field__hidden-placeholder {
+.field:not(.field--phone):not(.field--password)
+  input:not(:placeholder-shown)
+  ~ .field__hidden-placeholder {
   opacity: 1;
   transform: translateY(-170%);
 }
@@ -376,7 +403,10 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(-6px);
-  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease;
 }
 
 .field__error.shown {
@@ -456,7 +486,9 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xs);
   background: transparent;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .check:hover .check__box,
@@ -469,7 +501,9 @@
   height: 9px;
   opacity: 0;
   transform: scale(0.9);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .check input:checked + .check__box {
@@ -524,7 +558,7 @@
 .register-form__submit {
   position: relative;
   width: 100%;
-  margin-top: auto;
+  margin-top: var(--space-xs);
   margin-bottom: var(--space-sm);
   padding: var(--space-lg) 0;
   border: 0;
@@ -563,15 +597,23 @@
 .register-form__submit:active svg {
   stroke: var(--color-primary);
 }
-
 .register-form__signin {
+  font-size: var(--font-size-sm);
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: var(--space-xxs);
+}
+.register-form__signin p {
   color: var(--color-text);
   text-align: center;
-  font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
+	transition: all 0.3s ease;
 }
-
-.register-form__signin a {
+.register-form__signin:hover p{
+ color: var(--color-primary);
+}
+.register-form__signin span {
   color: var(--color-primary);
   text-decoration: underline;
   text-underline-offset: 1px;
@@ -735,7 +777,11 @@
   .button {
     padding-top: clamp(0.3125rem, 0.0471938776rem + 1.3265306122vw, 1.125rem);
     padding-right: clamp(0.625rem, 0.0943877551rem + 2.6530612245vw, 2.25rem);
-    padding-bottom: clamp(0.3125rem, 0.0471938776rem + 1.3265306122vw, 1.125rem);
+    padding-bottom: clamp(
+      0.3125rem,
+      0.0471938776rem + 1.3265306122vw,
+      1.125rem
+    );
     padding-left: clamp(0.625rem, 0.0943877551rem + 2.6530612245vw, 2.25rem);
     border-radius: clamp(0.5rem, 0.3367346939rem + 0.8163265306vw, 1rem);
     font-size: clamp(0.875rem, 0.6709183674rem + 1.0204081633vw, 1.5rem);
