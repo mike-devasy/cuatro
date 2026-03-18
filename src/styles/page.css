@@ -275,11 +275,7 @@
   letter-spacing: -0.02em;
 }
 
-.benefits__text  {
-	font-size: 2rem;
-	font-weight: 300;
-
-}
+ 
 
 .benefits__picture {
   position: relative;
@@ -339,6 +335,7 @@
 .benefits-text {
   position: relative;
   z-index: 2;
+	font-weight: 300;
 }
 
 .benefits__button--signin svg {
@@ -352,17 +349,14 @@
 .benefits__button--login{
 	  position: relative;
   width: 100%;
-  /* margin-top: var(--space-xs); */
-  /* margin-bottom: var(--space-sm); */
+ 
   padding: var(--space-lg) 0;
   border: 0;
   border-radius: var(--radius-sm);
-  /* background: var(--color-primary); */
   color: var(--color-text);
   cursor: pointer;
   font-family: var(--font-family-display);
   font-size: var(--font-size-md);
-  /* font-weight: var(--font-weight-bold); */
   text-transform: uppercase;
 }
 .benefits__button--signin:hover,
@@ -777,7 +771,11 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
-
+@media (max-width: 48em){
+	.benefits__buttons{
+margin-top: 1rem;
+	}
+}
 @media (max-width: 29.99875em) {
   .header__logo {
     gap: 0.3125rem;
@@ -786,6 +784,9 @@
   .banner {
     background: none;
   }
+.benefits__title{
+	display: none;
+}
 }
 
 @media (max-width: 47.99875em) {
@@ -856,6 +857,7 @@
   }
 	.benefits__buttons{
 		margin-top: 2rem;
+	 
 		align-self: center;
 		width: 40%;
 	}
@@ -929,7 +931,7 @@
 
   .page__hero {
     padding-top: clamp(6.25rem, 4.5153061224rem + 8.6734693878vw, 11.5625rem);
-    padding-bottom: clamp(2rem, 1.0836734694rem + 4.0816326531vw, 5rem);
+    padding-bottom: clamp(1rem, 0.1836734694rem + 4.0816326531vw, 5rem);
   }
 
   .page__form {
@@ -944,8 +946,15 @@
     font-size: clamp(1rem, 0.7153061224rem + 3.6734693878vw, 2.5rem);
 		margin-bottom: clamp(1rem, -0.7rem + 7.2653061224vw, 2.5rem);
   }
-   .benefits__text {
+	.benefits__text {
     font-size: clamp(1rem, 0.3153061224rem + 3.6734693878vw, 2rem);
+    font-weight: 300;
+}
+   .benefits__text--signin {
+    font-size: clamp(1rem, 0.3153061224rem + 3.6734693878vw, 2rem);
+  }
+   .benefits__text--login {
+    font-size: clamp(1rem, 0.0153061224rem + 3.6734693878vw, 1.4rem);
   }
 	  .benefits__container {
     gap: clamp(1.25rem, 0.006377551rem + 1.5306122449vw, 2.5rem);
@@ -965,6 +974,7 @@
 .benefits__label{
 font-size: clamp(1rem, 0.5153061224rem + 2.6734693878vw, 1.5rem);
 }
+
   .hero__container {
     margin-bottom: clamp(0rem, -1.6326529783rem + 8.1632652041vw, 5rem);
   }
@@ -974,7 +984,7 @@ font-size: clamp(1rem, 0.5153061224rem + 2.6734693878vw, 1.5rem);
   }
 
   .banner {
-    padding-top: clamp(0rem, -1.9387754273rem + 9.693877449vw, 5.9375rem);
+    padding-top: clamp(1.5rem, -1.9387754273rem + 9.693877449vw, 5.9375rem);
     padding-bottom: clamp(0rem, -1.9387754273rem + 9.693877449vw, 5.9375rem);
   }
 
