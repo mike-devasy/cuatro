@@ -984,7 +984,7 @@ font-size: clamp(1rem, 0.5153061224rem + 2.6734693878vw, 1.5rem);
   }
 
   .banner {
-    padding-top: clamp(1rem, -1.9387754273rem + 9.693877449vw, 5.9375rem);
+    padding-top: clamp(0rem, -1.9387754273rem + 9.693877449vw, 5.9375rem);
     padding-bottom: clamp(0rem, -1.9387754273rem + 9.693877449vw, 5.9375rem);
   }
 
