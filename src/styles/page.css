@@ -32,6 +32,10 @@
   top: 0;
   width: 100%;
   z-index: 50;
+ 
+	transform: translateY(0);
+	opacity: 1;
+  visibility: visible;
 }
 
 .header__container {
@@ -80,7 +84,7 @@
 }
 
 [data-fls-header-scroll] {
-  transition: background-color 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out, transform 1.2s ease, opacity 1.2s;
 }
 
 [data-fls-header-scroll].--header-scroll {
@@ -92,6 +96,12 @@
   background-color: rgba(12, 12, 24, 0.78);
 }
 
+[data-fls-header-scroll].--header-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+	transform: translateY(-100%);
+}
 .page__hero {
   padding-top: 6.25rem;
   padding-bottom: 2.5rem;
