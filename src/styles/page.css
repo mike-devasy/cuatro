@@ -84,7 +84,7 @@
 }
 
 [data-fls-header-scroll] {
-  transition: background-color 0.8s ease-in-out, transform 1.2s ease, opacity 1.2s;
+  transition: background-color 0.8s ease-in-out, transform 1.2s ease, opacity 1.5s;
 }
 
 [data-fls-header-scroll].--header-scroll {
@@ -310,6 +310,14 @@
   bottom: 18.765432%;
   left: 11.846154%;
 }
+	  .benefits__label--2 {
+    top: 18.765432%;
+    right: 11.846154%;
+  }
+  .benefits__label--4 {
+    bottom: 18.765432%;
+    right: 11.846154%;
+  }
 .benefits__buttons {
   display: flex;
   flex-direction: column;
@@ -558,6 +566,14 @@
   .benefits__title {
     display: none;
   }
+	  .benefits__label--2 {
+    top: 28.765432%;
+    right: 11.846154%;
+  }
+  .benefits__label--4 {
+    bottom: 28.765432%;
+    right: 11.846154%;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -567,8 +583,18 @@
     padding: 0;
     background: transparent;
   }
-}
 
+}
+@media (max-width: 53.5em){
+			  .benefits__label--2 {
+    top: 28.765432%;
+    right: 11.846154%;
+  }
+  .benefits__label--4 {
+    bottom: 8.765432%;
+    right: 11.846154%;
+  }
+}
 @media (min-width: 48em) {
   .bonus-card {
     padding: 25px var(--space-md);
@@ -595,6 +621,7 @@
     align-self: center;
     width: 40%;
   }
+
 }
 
 @media (min-width: 64em) {
@@ -622,7 +649,7 @@
     top: 90%;
   }
 }
-@media (min-width: 56em) {
+/* @media (max-width: 56em) {
   .benefits__label--2 {
     top: 18.765432%;
     right: 11.846154%;
@@ -631,7 +658,7 @@
     bottom: 18.765432%;
     right: 11.846154%;
   }
-}
+} */
 @media (min-width: 20em) {
   .header__container {
     padding-top: clamp(0.625rem, 0.012755102rem + 3.06122449vw, 2.5rem);
@@ -699,14 +726,7 @@
     padding-right: clamp(0rem, -3.2653060395rem + 16.3265305102vw, 12rem);
     padding-left: clamp(0rem, -3.2653060395rem + 16.3265305102vw, 12rem);
   }
-  .benefits__label--2 {
-    top: 28.765432%;
-    right: 11.846154%;
-  }
-  .benefits__label--4 {
-    bottom: 28.765432%;
-    right: 11.846154%;
-  }
+
   .benefits__label {
     font-size: clamp(1rem, 0.5153061224rem + 2.6734693878vw, 1.5rem);
   }
