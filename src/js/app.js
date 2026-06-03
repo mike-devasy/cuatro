@@ -3,11 +3,12 @@ import { initFieldClear } from './modules/field-clear.js';
 import { initPasswordToggle } from './modules/password-toggle.js';
 import { initHeaderScroll } from './modules/header-scroll.js';
 import { initHeaderHide } from "./modules/header-hide.js"
-
+import { initTestimonialsSlider } from "./modules/testimonials.js"
 export function initApp() {
   initHeaderScroll();
   initFieldClear();
   initPasswordToggle();
 	initFormValidation();
-	initHeaderHide()
+	initHeaderHide();
+	initTestimonialsSlider();
 }
