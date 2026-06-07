@@ -5,26 +5,31 @@ const testimonialsData = [
     text: `"At Nightrush, we've had the privilege of working with Boomerang Partners on various innovative and performance-driven initiatives. Their team consist... t Nightrush, we've had the privilege of working with Boomerang Partners on various innovative and performance-driven initiatives. Their team consist..."`,
     name: "nightrush",
     logo: "./images/testimonials/favorite.svg",
+    url: "https://cpaxess24.com",
   },
   {
     text: `"We have been working with Boomerang for many years. Boomerang partners are among our favorite partners. They have some excellent brands in their port..."`,
     name: "cryptocasinos24",
     logo: "./images/testimonials/favorite.svg",
+    url: "https://cryptocasinos24.com",	
   },
   {
     text: `"We're really happy teaming up with Boomerang Partners. They're super reliable and one of the market leaders. Their brands totally convert great with ..."`,
     name: "topcashbackcasinosa",
     logo: "./images/testimonials/favorite.svg",
+    url: "https://topcashbackcasinosa.com",
   },
   {
     text: `"Their team is responsive and always ready to help. A fantastic partner to work with!"`,
     name: "kasynopolska10",
     logo: "./images/testimonials/favorite.svg",
+    url: "https://kasynopolska10.com",
   },
   {
     text: `"We value this partnership and appreciate the communication, support and strong business results. Happy to recommend them."`,
     name: "partnername",
     logo: "./images/testimonials/favorite.svg",
+    url: "https://partnername.com",
   },
 ]
 function showMore() {
@@ -109,7 +114,7 @@ export function initTestimonialsSlider() {
   let step = 0
   let maxIndex = 0
 
-const createCard = ({ text, name, logo }) => {
+const createCard = ({ text, name, logo, url }) => {
   const card = document.createElement("article")
   card.className = "testimonials__card"
 
@@ -133,10 +138,23 @@ const createCard = ({ text, name, logo }) => {
     </button>
   </div>
 
-  <div class="testimonials__author">
-    <img class="testimonials__logo" src="${logo}" alt="" loading="lazy">
-    <span class="testimonials__name">${name}</span>
-  </div>
+<div class="testimonials__author">
+      <img
+        class="testimonials__logo"
+        src="${logo}"
+        alt="${name}"
+        loading="lazy"
+      >
+
+      <a
+        class="testimonials__name"
+        href="${url}"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
+        ${name}
+      </a>
+    </div>
 `
 
   return card
